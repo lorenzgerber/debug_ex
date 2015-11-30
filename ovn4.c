@@ -25,7 +25,7 @@ int main(void) {
   printf("Mata in text att kryptera avsluta med att skriva quit på en egen rad\n");
   while(running) {
     fgets(str,255,stdin);
-    outString=caesar(str,1);
+    //outString=caesar(str,1);
     if(strncmp(str,"quit",4)==0) {
       free(outString);
       exit(0);
