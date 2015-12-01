@@ -28,7 +28,7 @@ int main(void){
     else 
       count = 0; 
     lastdie = die; 
-    unfinished = count ==  2; 
+    unfinished = count !=  2; 
   }
 
   printf("Vi fick tre stycken %s efter %d kast\n", dienames[die-1], throws); 

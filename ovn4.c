@@ -28,6 +28,7 @@ int main(void) {
     //outString=caesar(str,1);
     if(strncmp(str,"quit",4)==0) {
       free(outString);
+      free(str);
       exit(0);
     }
     outString=caesar(str,1);

@@ -8,10 +8,10 @@ int main(void){
   printf("Detta program beräknar n!\nAnge n : ");
   scanf("%d", &fak);
 
-  while (fak > 1);
+  while (fak > 1)
   {
     result *= fak;
-    fak++;
+    fak--;
   }
   printf("svar: %d\n", result);
   return 1;

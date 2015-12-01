@@ -39,12 +39,15 @@ int main(void){
   srand(seed);         
   failed = 0; 
   tested = 0; 
-  for (i=0 ; i<100 ; i++)
-    for(j=0 ; j<10 ; j++)
-      if (mybuffer[i][j] != rand())
-	printf("Olika slumptal!!! (fel?)\n"); 
-  tested++; 
-  failed = 1; 
+  for (i=0 ; i<100 ; i++){
+    for(j=0 ; j<10 ; j++){
+      if (mybuffer[i][j] != rand()){
+	printf("Olika slumptal!!! (fel?)\n");
+	failed = 1;
+      }
+      tested++;
+    }
+  }
             
             
   if (failed)
